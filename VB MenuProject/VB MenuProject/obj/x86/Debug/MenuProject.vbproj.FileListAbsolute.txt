@@ -1,0 +1,28 @@
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.vbproj.GenerateResource.Cache
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.exe
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.xml
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.pdb
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.MenuProject.mainForm.resources
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.Resources.resources
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\bin\Debug\TabbedChildForms.exe
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\bin\Debug\TabbedChildForms.pdb
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\bin\Debug\TabbedChildForms.xml
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.MenuProject.childForm1.resources
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.MenuProject.childForm2.resources
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms.MenuProject.childForm3.resources
+C:\Documents and Settings\vchen\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\TabbedChildForms._childForm.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.childForm1.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject._childForm.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.MenuProject.mainForm.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.childForm2.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.childForm3.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.Resources.resources
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\bin\Debug\MenuProject.exe
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\bin\Debug\MenuProject.pdb
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\bin\Debug\MenuProject.xml
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.exe
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.xml
+C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.pdb
