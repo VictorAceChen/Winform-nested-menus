@@ -10,7 +10,8 @@ Purpose?
 [IMPLEMENTING CLOSE BUTTON IN TAB PAGES](http://www.dotnetthoughts.net/implementing-close-button-in-tab-pages/)
 
 Changes I made:
-In the original example, MDI child forms had there window flicker during tab selection. This wasdue to being maximize. 
+
+In the original example, MDI child forms had there window flicker during tab selection. This was due to being maximized in MdiChildActivate event of the main form. I took out  
 I had them all derive an intermediary form class:
 
 NEED TO PUSH UP IMAGE EXAMPLE 
