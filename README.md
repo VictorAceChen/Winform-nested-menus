@@ -5,12 +5,13 @@ Purpose?
 
 
 # References
-[ControlTab and MDI Child form interaction](http://www.codeproject.com/Articles/17640/Tabbed-MDI-Child-Forms)
+[Tabbed MDI Child Forms](http://www.codeproject.com/Articles/17640/Tabbed-MDI-Child-Forms)
 
-[Drawing Close Button on tabs](http://www.dotnetthoughts.net/implementing-close-button-in-tab-pages/)
+[IMPLEMENTING CLOSE BUTTON IN TAB PAGES](http://www.dotnetthoughts.net/implementing-close-button-in-tab-pages/)
 
 Changes I made:
-All MDI child forms had there window flicker during tab change. 
+In the original example, MDI child forms had there window flicker during tab selection. This wasdue to being maximize. 
+I had them all derive an intermediary form class:
 
 NEED TO PUSH UP IMAGE EXAMPLE 
 
