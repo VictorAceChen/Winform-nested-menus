@@ -11,8 +11,11 @@ Purpose?
 
 Changes I made:
 
-In the original example, MDI child forms had there window flicker during tab selection. This was due to being maximized in MdiChildActivate event of the main form. I took out  
-I had them all derive an intermediary form class:
+In the original example, MDI child forms had there window flicker during tab selection. Think this was due to FormWindowState.Maximized existing in Form1_MdiChildActivate. Child forms were being maximized after being selected. 
+
+I took out that line of code and had all child forms derive an intermediary form class "_childForm".
+There they will inerit the load method where 
+
 
 NEED TO PUSH UP IMAGE EXAMPLE 
 
