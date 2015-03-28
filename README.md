@@ -1,12 +1,14 @@
 # MenuProject
-MDI Interface using Tabs with Close Buttons
+An MDI Interface using Tabs with Close Buttons
 
-Purpose?
-
+![alt tag](https://raw.githubusercontent.com/VictorAceChen/MenuProject/master/SampleImage.png)
 
 # References
+
+For interaction between TabControl MDI Child Forms:<br />
 [Tabbed MDI Child Forms](http://www.codeproject.com/Articles/17640/Tabbed-MDI-Child-Forms)
 
+For drawing close buttons on tabs:<br />
 [IMPLEMENTING CLOSE BUTTON IN TAB PAGES](http://www.dotnetthoughts.net/implementing-close-button-in-tab-pages/)
 
 Changes I made:
