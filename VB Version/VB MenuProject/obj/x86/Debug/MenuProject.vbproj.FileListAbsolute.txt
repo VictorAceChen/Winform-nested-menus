@@ -26,3 +26,16 @@ C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\bin\Debug\MenuProject.xml
 C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.exe
 C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.xml
 C:\Users\Victor\Desktop\VB MenuProject\VB MenuProject\obj\x86\Debug\MenuProject.pdb
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.exe
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.xml
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.pdb
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\bin\Debug\MenuProject.exe
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\bin\Debug\MenuProject.pdb
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\bin\Debug\MenuProject.xml
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.childForm1.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject._childForm.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.MenuProject.mainForm.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.childForm2.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.childForm3.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.Resources.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\VB Version\VB MenuProject\obj\x86\Debug\MenuProject.vbproj.GenerateResource.Cache

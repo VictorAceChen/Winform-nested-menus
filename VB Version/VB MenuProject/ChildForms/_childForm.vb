@@ -6,11 +6,10 @@ Public Class _childForm
         ByVal e As System.EventArgs) Handles MyBase.Load
 
         'Default settings for child forms
-        Me.WindowState = FormWindowState.Maximized
         Me.ControlBox = False
+        Me.WindowState = FormWindowState.Maximized
 
     End Sub
-
 
 End Class
 

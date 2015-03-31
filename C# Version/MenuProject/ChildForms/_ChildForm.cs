@@ -13,9 +13,9 @@ namespace MenuProject.ChildForms
         protected virtual void _childForm_Load(object sender, System.EventArgs e)
         {
             //Default settings for child forms
+            this.ControlBox = false; 
             this.WindowState = FormWindowState.Maximized;
-            this.ControlBox = false;
-            this.FormBorderStyle  = FormBorderStyle.None;
+            //this.FormBorderStyle  = FormBorderStyle.None;
         }
     }
 }

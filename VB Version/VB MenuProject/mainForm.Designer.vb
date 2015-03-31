@@ -38,15 +38,15 @@
             'TabControl1
             '
             Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Top
+            Me.TabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed
             Me.TabControl1.Location = New System.Drawing.Point(0, 24)
             Me.TabControl1.Name = "TabControl1"
             Me.TabControl1.SelectedIndex = 0
             Me.TabControl1.Size = New System.Drawing.Size(409, 23)
             Me.TabControl1.TabIndex = 2
             Me.TabControl1.Visible = False
-            AddHandler TabControl1.DrawItem, AddressOf tabControl1_DrawItem
             '
-            'Form1
+            'mainForm
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -55,7 +55,7 @@
             Me.Controls.Add(Me.MenuStrip1)
             Me.IsMdiContainer = True
             Me.MainMenuStrip = Me.MenuStrip1
-            Me.Name = "Form1"
+            Me.Name = "mainForm"
             Me.Text = "Form1"
             Me.ResumeLayout(False)
             Me.PerformLayout()

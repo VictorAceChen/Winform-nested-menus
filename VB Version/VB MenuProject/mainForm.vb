@@ -63,8 +63,6 @@ Namespace MenuProject
                 CloseImageTarget = Images.[Default]
             End If
 
-            MessageBox.Show("got here")
-
             e.Graphics.DrawString(
                 Me.TabControl1.TabPages(e.Index).Text,
                 e.Font,
@@ -81,19 +79,19 @@ Namespace MenuProject
 
         End Sub
 
-        Private Sub tabControl1_SelectedIndexChanged(sender As Object, e As EventArgs)
-            If (tabControl1.SelectedTab IsNot Nothing) AndAlso (tabControl1.SelectedTab.Tag IsNot Nothing) Then
-                TryCast(tabControl1.SelectedTab.Tag, Form).[Select]()
+        Private Sub tabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+            If (TabControl1.SelectedTab IsNot Nothing) AndAlso (TabControl1.SelectedTab.Tag IsNot Nothing) Then
+                TryCast(TabControl1.SelectedTab.Tag, Form).[Select]()
             End If
 
-            If tabControl1.SelectedIndex = -1 Then
+            If TabControl1.SelectedIndex = -1 Then
                 Return
             End If
 
             focusCloseButton()
         End Sub
 
-        Private Sub tabControl1_MouseClick(sender As Object, e As MouseEventArgs)
+        Private Sub tabControl1_MouseClick(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseClick
 
             If closeButtonPosition.Contains(e.Location) AndAlso MessageBox.Show("Would you like to Close this Tab?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
 
@@ -101,25 +99,25 @@ Namespace MenuProject
                 TryCast(Me.TabControl1.TabPages(TabControl1.SelectedIndex).Tag, Form).Dispose()
 
                 'Remove the Tab
-                Me.tabControl1.TabPages.RemoveAt(tabControl1.SelectedIndex)
+                Me.TabControl1.TabPages.RemoveAt(TabControl1.SelectedIndex)
 
                 'after closing a tab, bring focus to the last tab
                 'The if statement prevents error when there is only a single tab left
                 TabControl1.SelectedTab = Me.TabControl1.TabPages(TabControl1.TabCount - 1)
-                If tabControl1.TabCount = 0 Then
+                If TabControl1.TabCount = 0 Then
                     Return
                 End If
-                 
+
                 focusCloseButton()
             End If
         End Sub
 
-        Private Sub tabControl1_MouseLeave(sender As Object, e As EventArgs)
+        Private Sub tabControl1_MouseLeave(sender As Object, e As EventArgs) Handles TabControl1.MouseLeave
             CloseImageDynamic = Images.[Default]
-            tabControl1.Invalidate()
+            TabControl1.Invalidate()
         End Sub
 
-        Private Sub tabControl1_MouseDown(sender As Object, e As MouseEventArgs)
+        Private Sub tabControl1_MouseDown(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseDown
             isMouseLeftDown = True
 
             If closeButtonPosition.Contains(e.Location) Then
@@ -128,10 +126,10 @@ Namespace MenuProject
                 CloseImageDynamic = Images.Default
             End If
 
-            tabControl1.Invalidate()
+            TabControl1.Invalidate()
         End Sub
 
-        Private Sub tabControl1_MouseMove(sender As Object, e As MouseEventArgs)
+        Private Sub tabControl1_MouseMove(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseMove
             'keep the press down image when moving
             If isMouseLeftDown Then
                 Return
@@ -152,10 +150,10 @@ Namespace MenuProject
                 Return
             End If
 
-            tabControl1.Invalidate()
+            TabControl1.Invalidate()
         End Sub
 
-        Private Sub tabControl1_MouseUp(sender As Object, e As MouseEventArgs)
+        Private Sub tabControl1_MouseUp(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseUp
             isMouseLeftDown = False
         End Sub
 #End Region

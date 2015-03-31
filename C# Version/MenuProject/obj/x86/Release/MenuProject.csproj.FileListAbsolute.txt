@@ -47,3 +47,15 @@ C:\Users\Victor\Desktop\C# MenuProject\MenuProject\MenuProject\obj\x86\Release\M
 C:\Users\Victor\Desktop\C# MenuProject\MenuProject\MenuProject\obj\x86\Release\MenuProject.mainForm.resources
 C:\Users\Victor\Desktop\C# MenuProject\MenuProject\MenuProject\obj\x86\Release\MenuProject.Properties.Resources.resources
 C:\Users\Victor\Desktop\C# MenuProject\MenuProject\MenuProject\obj\x86\Release\MenuProject.csproj.GenerateResource.Cache
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\bin\Release\MenuProject.exe
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\bin\Release\MenuProject.pdb
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.csprojResolveAssemblyReference.cache
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.ChildForms.ChildForm1.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.ChildForms.ChildForm2.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.ChildForms.ChildForm3.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.ChildForms._ChildForm.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.mainForm.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.Properties.Resources.resources
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.csproj.GenerateResource.Cache
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.exe
+C:\Users\Victor\Documents\GitHub\MenuProject\C# Version\MenuProject\obj\x86\Release\MenuProject.pdb

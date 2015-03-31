@@ -39,7 +39,6 @@ Partial Class childForm2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(292, 273)
-        Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Name = "childForm2"
         Me.Text = "childForm2"
