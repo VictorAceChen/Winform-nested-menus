@@ -16,4 +16,4 @@ In the original example from "Tabbed MDI Child Forms", MDI child forms had thier
 
 I didn't want to add menu items (through the Visual Studio Designer) each time a new MDI child form was introduced. Now they are generated for each "_childForm"(that exist within the assembly) and for the interfaces represented in an implementation tree in "menuStripFormation.cs". As long as a "_childForm" implements an interface within said tree, It will have a menu item made. Click events for menu items (derived from "_childForm") are generated within MenuItemForChildForm.
 
-For "IMPLEMENTING CLOSE BUTTON IN TAB PAGES", I replaced the 'x' that represented the close button with an image. And instead of using a "for loop" to register a click event, I based it on "tabControl.SelectedIndex". To give it a button effect, I had the image redrawn from mouse events within the tabcontrol.<br /> 
+For "IMPLEMENTING CLOSE BUTTON IN TAB PAGES", I replaced the 'x' that represented the close button with an image. To give it a button effect, I had the image redrawn from mouse events within the tabcontrol.<br />
