@@ -3,7 +3,7 @@ Namespace MenuProject
 
     Public Class mainForm : Inherits Form
         Dim closeButtonPosition As Rectangle
-        Dim rect As Rectangle
+        Dim HoveredTabIndex As Integer
         Dim CloseImageDynamic As Bitmap = Images.Default
         Dim isMouseLeftDown As Boolean = False
 
@@ -36,7 +36,6 @@ Namespace MenuProject
                     TabControl1.SelectedTab = tp
                     Me.ActiveMdiChild.Tag = tp
 
-                    focusCloseButton()
                 End If
             End If
         End Sub
@@ -44,7 +43,7 @@ Namespace MenuProject
 
         'focuses close button on selected tab
         Private Sub focusCloseButton()
-            rect = tabControl1.GetTabRect(tabControl1.SelectedIndex)
+            Dim rect As Rectangle = TabControl1.GetTabRect(HoveredTabIndex)
             closeButtonPosition = New Rectangle(rect.Right - 15, rect.Top + 4, CloseImageDynamic.Width, CloseImageDynamic.Height)
         End Sub
 
@@ -59,7 +58,7 @@ Namespace MenuProject
         Private Sub tabControl1_DrawItem(sender As Object, e As DrawItemEventArgs) Handles TabControl1.DrawItem
             Dim CloseImageTarget As Bitmap = CloseImageDynamic
 
-            If e.Index <> TabControl1.SelectedIndex Then
+            If e.Index <> HoveredTabIndex Then
                 CloseImageTarget = Images.[Default]
             End If
 
@@ -87,8 +86,6 @@ Namespace MenuProject
             If TabControl1.SelectedIndex = -1 Then
                 Return
             End If
-
-            focusCloseButton()
         End Sub
 
         Private Sub tabControl1_MouseClick(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseClick
@@ -103,12 +100,11 @@ Namespace MenuProject
 
                 'after closing a tab, bring focus to the last tab
                 'The if statement prevents error when there is only a single tab left
-                TabControl1.SelectedTab = Me.TabControl1.TabPages(TabControl1.TabCount - 1)
                 If TabControl1.TabCount = 0 Then
                     Return
                 End If
-
-                focusCloseButton()
+                TabControl1.SelectedTab = Me.TabControl1.TabPages(TabControl1.TabCount - 1)
+                
             End If
         End Sub
 
@@ -130,6 +126,17 @@ Namespace MenuProject
         End Sub
 
         Private Sub tabControl1_MouseMove(sender As Object, e As MouseEventArgs) Handles TabControl1.MouseMove
+
+            'Sets tab index for Close button to reference.
+            For i As Integer = 0 To TabControl1.TabCount - 1
+                If TabControl1.GetTabRect(i).Contains(e.Location) Then
+                    HoveredTabIndex = i
+                    focusCloseButton()
+                    Exit For
+                End If
+            Next
+
+
             'keep the press down image when moving
             If isMouseLeftDown Then
                 Return

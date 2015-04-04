@@ -14,7 +14,7 @@ namespace MenuProject
     public partial class mainForm : Form
     { 
         Rectangle closeButtonPosition;
-        Rectangle rect; 
+        int HoveredTabIndex;
         Bitmap CloseImageDynamic = Images.Default;
         bool isMouseLeftDown = false;
          
@@ -60,8 +60,8 @@ namespace MenuProject
 
         //focuses on selected tab
         private void focusCloseButton()
-        { 
-            rect = tabControl1.GetTabRect(tabControl1.SelectedIndex);
+        {
+            Rectangle rect = tabControl1.GetTabRect(HoveredTabIndex);
             closeButtonPosition =
                 new Rectangle(rect.Right - 15
                 , rect.Top + 4
@@ -75,7 +75,7 @@ namespace MenuProject
         {
             Bitmap CloseImageTarget = CloseImageDynamic;
 
-            if (e.Index != tabControl1.SelectedIndex)
+            if (e.Index != HoveredTabIndex)
                 CloseImageTarget = Images.Default;
             
             #region  DrawTabTitle
@@ -108,8 +108,6 @@ namespace MenuProject
                 (tabControl1.SelectedTab.Tag as Form).Select();
 
             if (tabControl1.SelectedIndex == -1) return;
-
-            focusCloseButton();
         }
 
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
@@ -129,9 +127,7 @@ namespace MenuProject
                 //The if statement prevents error when there is only a single tab left
                 if (tabControl1.TabCount == 0)  return;
                 
-                tabControl1.SelectedTab = this.tabControl1.TabPages[tabControl1.TabCount - 1];    
-                focusCloseButton();
-                
+                tabControl1.SelectedTab = this.tabControl1.TabPages[tabControl1.TabCount - 1]; 
             }
         }
 
@@ -155,6 +151,17 @@ namespace MenuProject
 
         private void tabControl1_MouseMove(object sender, MouseEventArgs e)
         {
+            //Sets tab index for Close button to reference
+            for (int i = 0; i < tabControl1.TabCount; i++)
+            {
+                if (tabControl1.GetTabRect(i).Contains(e.Location))
+                {
+                    HoveredTabIndex = i;
+                    focusCloseButton();
+                    break;
+                }
+            }
+
             //keep the press down image when moving
             if (isMouseLeftDown) return;
 
@@ -169,6 +176,7 @@ namespace MenuProject
                 if (CloseImageDynamic != Images.Default)
                     CloseImageDynamic = Images.Default;
                 else return;
+
 
             tabControl1.Invalidate(); 
         }
