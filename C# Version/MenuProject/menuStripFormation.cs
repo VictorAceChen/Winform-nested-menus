@@ -84,11 +84,11 @@ namespace MenuProject
             List<MenuItemForChildForm> FormItemList = new List<MenuItemForChildForm>();
 
             //Collect all classes that derive from _ChildClasses
-            dynamic childForms =
+            IEnumerable<Type> childForms =
                 AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes()).
                 Where(y => y.IsSubclassOf(typeof(ChildForms._ChildForm)));
 
-            foreach (var child in childForms)
+            foreach (Type child in childForms)
             {
                 //Create menu item for each Form and add it to parameter DropDown
                 ToolStripMenuItem item = new ToolStripMenuItem();
